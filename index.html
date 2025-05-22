@@ -3,94 +3,150 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi Portfolio - Backend Kotlin Developer</title>
+  <title>Kevin Perona - Backend Kotlin Developer</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      margin: 0;
       font-family: 'Inter', sans-serif;
-      background: #0f172a;
+      background-color: #0f172a;
       color: #f8fafc;
-      line-height: 1.6;
+      line-height: 1.7;
     }
+
     header {
-      background: #1e293b;
-      padding: 2rem;
+      background: linear-gradient(to right, #1e3a8a, #1e293b);
+      padding: 3rem 1rem;
       text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
+
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+      font-size: 3rem;
+      font-weight: 800;
     }
+
     header p {
       margin-top: 0.5rem;
-      color: #94a3b8;
+      color: #cbd5e1;
+      font-size: 1.1rem;
     }
+
     main {
-      max-width: 800px;
-      margin: 2rem auto;
+      max-width: 1000px;
+      margin: 3rem auto;
       padding: 0 1rem;
     }
+
     section {
       margin-bottom: 3rem;
+      animation: fadeIn 1s ease-in;
     }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid #38bdf8;
+      padding-left: 0.75rem;
+    }
+
+    p {
+      color: #e2e8f0;
+    }
+
+    .project-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
     .project {
       background: #1e293b;
       border-radius: 12px;
-      padding: 1rem 1.5rem;
-      margin-bottom: 1.5rem;
+      padding: 1.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid #334155;
     }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(56, 189, 248, 0.2);
+    }
+
     .project h3 {
-      margin: 0;
+      margin-bottom: 0.5rem;
       color: #38bdf8;
     }
+
     .project p {
-      color: #cbd5e1;
+      margin-bottom: 1rem;
     }
-    a {
-      color: #38bdf8;
+
+    .project a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #0ea5e9;
+      font-weight: 600;
       text-decoration: none;
+      transition: color 0.2s ease;
     }
+
+    .project a:hover {
+      color: #38bdf8;
+    }
+
     footer {
       text-align: center;
-      padding: 2rem;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
       color: #64748b;
+      border-top: 1px solid #334155;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Kevin Perona</h1>
-    <p>Desarrollador Backend | Javascript , Java , Kotlin, Spring Boot, Docker</p>
+    <p>Desarrollador Backend | JavaScript, Java, Kotlin, Spring Boot, Docker</p>
   </header>
   <main>
     <section>
       <h2>Sobre mí</h2>
       <p>
-        Soy un desarrollador junior con formación en DAW y enfoque en el backend con Kotlin. Me apasiona construir APIs eficientes, seguras y bien estructuradas.
+        Soy un desarrollador backend junior con formación en DAW y especialización en Kotlin. Me apasiona crear APIs modernas, eficientes y seguras. Busco crecer profesionalmente desarrollando soluciones escalables en equipos de alto impacto.
       </p>
     </section>
+
     <section>
       <h2>Proyectos Destacados</h2>
-
-      <div class="project">
-        <h3>API de Gestión de Tareas</h3>
-        <p>Spring Boot, JWT, PostgreSQL, Docker. CRUD completo con autenticación.</p>
-       <a href="https://github.com/kevinperonamartinez/taskmanager-api" target="_blank">Ver código en GitHub</a>
-
-      </div>
-
-      <div class="project">
-        <h3>Mini eCommerce API</h3>
-        <p>Spring Boot, roles de usuario, pagos simulados, control de stock.</p>
-        <a href="https://github.com/tuusuario/api-ecommerce" target="_blank">Ver código en GitHub</a>
+      <div class="project-list">
+        <div class="project">
+          <h3>API de Gestión de Tareas</h3>
+          <p>Spring Boot, JWT, PostgreSQL, Docker. CRUD completo con autenticación y gestión de usuarios.</p>
+          <a href="https://github.com/kevinperonamartinez/taskmanager-api" target="_blank">Ver código en GitHub</a>
+        </div>
+        <div class="project">
+          <h3>Mini eCommerce API</h3>
+          <p>Spring Boot, control de stock, roles de usuario, simulación de pagos y gestión de pedidos.</p>
+          <a href="https://github.com/tuusuario/api-ecommerce" target="_blank">Ver código en GitHub</a>
+        </div>
       </div>
     </section>
+
     <section>
       <h2>Contacto</h2>
-      <p>Email: kevinpermart@gmail.com</p>
-      <p>GitHub: <a href="https://github.com/kevinperonamartinez" target="_blank">Kevin Perona GitHub</a></p>
-      
+      <p>Email: <a href="mailto:kevinpermart@gmail.com" style="color:#38bdf8;">kevinpermart@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/kevinperonamartinez" target="_blank">github.com/kevinperonamartinez</a></p>
     </section>
   </main>
   <footer>
