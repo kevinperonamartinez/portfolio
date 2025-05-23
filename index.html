@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,7 +24,7 @@
       background: linear-gradient(to right, #1e3a8a, #1e293b);
       padding: 3rem 1rem;
       text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
 
     header h1 {
@@ -60,10 +61,11 @@
     }
 
     .project-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      display: flex;
+      flex-direction: column;
       gap: 1.5rem;
     }
+
 
     .project {
       background: #1e293b;
@@ -110,11 +112,19 @@
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Kevin Perona</h1>
@@ -128,44 +138,43 @@
       </p>
     </section>
 
-    <section>
-      <h2>Proyectos Destacados</h2>
-      <div class="project-list">
-        <div class="project">
-          <h3>API de Gestión de Tareas</h3>
-          <p>Spring Boot</p>
-          <a href="https://github.com/kevinperonamartinez/taskmanager-api" target="_blank">Ver código en GitHub</a>
-        </div>
-        <br><br>
-        <div class="project">
-          <h3>Gestor de libros API</h3>
-          <p>Spring Boot</p>
-          <a href="https://github.com/kevinperonamartinez/bookapi" target="_blank">Ver código en GitHub</a>
-        </div>
-        <br><br>
-         <div class="project">
-          <h3>Aplicación Android de Tareas y Hábitos</h3>
-          <p>Kotlin</p>
-          <a href="https://drive.google.com/file/d/1qoRKZgGGk7gwZHIJliqXiLbArQ6H_Bcl/view?usp=drive_link" target="_blank">Descargar APK ejecutable</a>
-        </div>
-        <br><br>
-         <div class="project">
-          <h3>Página Web sobre cursos de alemán</h3>
-          <p> JavaScript , Css , HTML , PHP</p>
-          <a href="https://kevinperona.com.es/kennen&lernen/kevin/index.html" target="_blank">Ver Página </a>
-        </div>
-        <br><br>
-      </div>
-    </section>
+   <section>
+  <h2>Proyectos Destacados</h2>
+  <div class="project-list">
+    <div class="project">
+      <h3>API de Gestión de Tareas</h3>
+      <p>Spring Boot</p>
+      <a href="https://github.com/kevinperonamartinez/taskmanager-api" target="_blank">Ver código en GitHub</a>
+    </div>
+    <div class="project">
+      <h3>Gestor de libros API</h3>
+      <p>Spring Boot</p>
+      <a href="https://github.com/kevinperonamartinez/bookapi" target="_blank">Ver código en GitHub</a>
+    </div>
+    <div class="project">
+      <h3>Aplicación Android de Tareas y Hábitos</h3>
+      <p>Kotlin</p>
+      <a href="https://drive.google.com/file/d/1qoRKZgGGk7gwZHIJliqXiLbArQ6H_Bcl/view?usp=drive_link" target="_blank">Descargar APK ejecutable</a>
+    </div>
+    <div class="project">
+      <h3>Página Web sobre cursos de alemán</h3>
+      <p>JavaScript , Css , HTML , PHP</p>
+      <a href="https://kevinperona.com.es/kennen&lernen/kevin/index.html" target="_blank">Ver Página</a>
+    </div>
+  </div>
+</section>
+
 
     <section>
       <h2>Contacto</h2>
       <p>Email: <a href="mailto:kevinpermart@gmail.com" style="color:#38bdf8;">kevinpermart@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/kevinperonamartinez"  style="color:#38bdf8;">github.com/kevinperonamartinez</a></p>
+      <p>GitHub: <a href="https://github.com/kevinperonamartinez"
+          style="color:#38bdf8;">github.com/kevinperonamartinez</a></p>
     </section>
   </main>
   <footer>
     <p>© 2025 Kevin Perona. Todos los derechos reservados.</p>
   </footer>
 </body>
+
 </html>
