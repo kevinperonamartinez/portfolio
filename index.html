@@ -11,24 +11,21 @@
       theme: {
         extend: {
           colors: {
-            accent: '#facc15', // amarillo dorado elegante
-          },
-        },
-      },
+            accent: '#facc15'
+          }
+        }
+      }
     };
   </script>
 </head>
 
 <body class="bg-gradient-to-b from-black via-gray-900 to-black text-gray-200 font-sans">
-  <!-- Header -->
   <header class="text-center py-16 bg-gradient-to-b from-black via-gray-800 to-black shadow-lg">
     <h1 class="text-5xl md:text-6xl font-extrabold text-accent drop-shadow-lg animate-fade-in">Kevin Perona</h1>
     <p class="mt-4 text-lg md:text-xl text-gray-400 animate-fade-in delay-200">Desarrollador Web & Móvil · Kotlin · Spring Boot · React</p>
   </header>
 
-  <!-- Main -->
   <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
-    <!-- Sobre mí -->
     <section class="mb-16 animate-slide-up">
       <h2 class="text-3xl md:text-4xl font-bold border-l-4 border-accent pl-4 mb-4">Sobre mí</h2>
       <p class="text-gray-300 text-lg leading-relaxed">
@@ -36,44 +33,51 @@
       </p>
     </section>
 
-    <!-- Tecnologías -->
     <section class="mb-16 animate-slide-up">
       <h2 class="text-3xl md:text-4xl font-bold border-l-4 border-accent pl-4 mb-4">Tecnologías</h2>
       <p class="text-gray-300 text-lg">Kotlin · Spring Boot · Java · Docker · Git · GitHub · HTML · CSS · JavaScript · React · MySQL · Android Studio · Angular · PHP</p>
     </section>
 
-    <!-- Proyectos -->
     <section class="mb-16">
       <h2 class="text-3xl md:text-4xl font-bold border-l-4 border-accent pl-4 mb-8 animate-slide-up">Proyectos Destacados</h2>
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        <!-- Proyecto -->
         <div class="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-xl p-6 shadow-md hover:scale-105 hover:shadow-xl transition-all duration-300 animate-fade-in">
           <h3 class="text-2xl font-semibold text-accent mb-2">🎵 Recomendador Musical IA</h3>
           <p class="text-gray-400 mb-4">App web que analiza tu estado de ánimo con IA y recomienda música de Spotify. Python, Streamlit, Transformers.</p>
           <a href="https://github.com/kevinperonamartinez/recomendador-musical-ia" target="_blank" class="inline-block px-4 py-2 bg-accent text-black rounded hover:bg-yellow-400 transition">Ver código</a>
           <a href="https://recomendador-musical-ia-kevinpm.streamlit.app/" target="_blank" class="ml-2 inline-block px-4 py-2 bg-gray-700 text-gray-100 rounded hover:bg-gray-600 transition">Probar app</a>
         </div>
-
-        <!-- Otro Proyecto -->
         <div class="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-xl p-6 shadow-md hover:scale-105 hover:shadow-xl transition-all duration-300 animate-fade-in delay-200">
           <h3 class="text-2xl font-semibold text-accent mb-2">📋 TaskManager API</h3>
           <p class="text-gray-400 mb-4">Backend en Spring Boot para gestionar tareas con CRUD y autenticación.</p>
           <a href="https://github.com/kevinperonamartinez/taskmanager-api" target="_blank" class="inline-block px-4 py-2 bg-accent text-black rounded hover:bg-yellow-400 transition">Ver código</a>
         </div>
-
-        <!-- Otro Proyecto -->
         <div class="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-xl p-6 shadow-md hover:scale-105 hover:shadow-xl transition-all duration-300 animate-fade-in delay-300">
           <h3 class="text-2xl font-semibold text-accent mb-2">📚 Gestor de Libros API</h3>
           <p class="text-gray-400 mb-4">API REST en Spring Boot para registrar, buscar y eliminar libros.</p>
           <a href="https://github.com/kevinperonamartinez/bookapi" target="_blank" class="inline-block px-4 py-2 bg-accent text-black rounded hover:bg-yellow-400 transition">Ver código</a>
         </div>
-
-        <!-- Más proyectos... -->
-        <!-- Repite las tarjetas cambiando títulos, descripciones y enlaces -->
+        <div class="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-xl p-6 shadow-md hover:scale-105 hover:shadow-xl transition-all duration-300 animate-fade-in delay-400">
+          <h3 class="text-2xl font-semibold text-accent mb-2">☁️ WeatherApp React</h3>
+          <p class="text-gray-400 mb-4">App React que muestra el clima actual en cualquier ciudad usando la API de OpenWeather.</p>
+          <a href="https://github.com/kevinperonamartinez/weather-app" target="_blank" class="inline-block px-4 py-2 bg-accent text-black rounded hover:bg-yellow-400 transition">Ver código</a>
+          <a href="https://weather-app-pink-xi.vercel.app/" target="_blank" class="ml-2 inline-block px-4 py-2 bg-gray-700 text-gray-100 rounded hover:bg-gray-600 transition">Ver app</a>
+        </div>
+        <div class="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-xl p-6 shadow-md hover:scale-105 hover:shadow-xl transition-all duration-300 animate-fade-in delay-500">
+          <h3 class="text-2xl font-semibold text-accent mb-2">📱 App Android de Tareas</h3>
+          <p class="text-gray-400 mb-4">App en Kotlin con almacenamiento local y gestión de tareas diarias.</p>
+          <a href="https://drive.google.com/file/d/1qoRKZgGGk7gwZHIJliqXiLbArQ6H_Bcl/view?usp=drive_link" target="_blank" class="inline-block px-4 py-2 bg-accent text-black rounded hover:bg-yellow-400 transition">Descargar APK</a>
+          <a href="https://github.com/kevinperonamartinez/appBorealis" target="_blank" class="ml-2 inline-block px-4 py-2 bg-gray-700 text-gray-100 rounded hover:bg-gray-600 transition">Ver código</a>
+          <a href="https://drive.google.com/file/d/1eqQKAIryUNeHNIQIG-uJOdPGejtENjux/view?usp=drive_link" target="_blank" class="ml-2 inline-block px-4 py-2 bg-gray-700 text-gray-100 rounded hover:bg-gray-600 transition">Ver documentación</a>
+        </div>
+        <div class="bg-gray-800 bg-opacity-50 backdrop-blur-lg rounded-xl p-6 shadow-md hover:scale-105 hover:shadow-xl transition-all duration-300 animate-fade-in delay-600">
+          <h3 class="text-2xl font-semibold text-accent mb-2">🌐 Página Web de Cursos</h3>
+          <p class="text-gray-400 mb-4">Sitio web informativo hecho con HTML, CSS, JavaScript y PHP.</p>
+          <a href="https://kevinperona.com.es/kennen&lernen/kevin/index.html" target="_blank" class="inline-block px-4 py-2 bg-accent text-black rounded hover:bg-yellow-400 transition">Ver página</a>
+        </div>
       </div>
     </section>
 
-    <!-- Contacto -->
     <section class="mb-16 animate-slide-up">
       <h2 class="text-3xl md:text-4xl font-bold border-l-4 border-accent pl-4 mb-4">Contacto</h2>
       <p class="text-lg">Email: <a href="mailto:kevinpermart@gmail.com" class="text-accent underline hover:text-yellow-400">kevinpermart@gmail.com</a></p>
@@ -81,12 +85,10 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="text-center py-6 border-t border-gray-700 text-gray-500 text-sm">
     © 2025 Kevin Perona. Todos los derechos reservados.
   </footer>
 
-  <!-- Animations -->
   <style>
     @keyframes fade-in {
       from { opacity: 0; }
