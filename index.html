@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kevin Perona - Desarrollador de Aplicaciones Web y Móvil </title>
+  <title>Kevin Perona - Desarrollador de Aplicaciones Web y Móvil</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     * {
@@ -15,74 +15,85 @@
 
     body {
       font-family: 'Inter', sans-serif;
-      background-color: black;
+      background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
       color: #f8fafc;
       line-height: 1.7;
+      overflow-x: hidden;
     }
 
     header {
-      background-color: black;
-      padding: 3rem 1rem;
+      background: linear-gradient(120deg, #000000, #1f2937);
+      padding: 4rem 1rem;
       text-align: center;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
     }
 
     header h1 {
-      font-size: 3rem;
+      font-size: 3.5rem;
       font-weight: 800;
+      color: #38bdf8;
+      text-shadow: 0 0 20px #38bdf880;
+      animation: fadeIn 1.5s ease-in-out forwards;
     }
 
     header p {
       margin-top: 0.5rem;
       color: #cbd5e1;
-      font-size: 1.1rem;
+      font-size: 1.3rem;
+      animation: fadeIn 2s ease-in-out forwards;
     }
 
     main {
-      max-width: 1000px;
-      margin: 3rem auto;
+      max-width: 1200px;
+      margin: 4rem auto;
       padding: 0 1rem;
     }
 
     section {
-      margin-bottom: 3rem;
-      animation: fadeIn 1s ease-in;
+      margin-bottom: 4rem;
+      animation: fadeInUp 1.2s ease-in-out;
     }
 
     h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      border-left: 4px solid #38bdf8;
-      padding-left: 0.75rem;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: #38bdf8;
+      border-left: 5px solid #38bdf8;
+      padding-left: 1rem;
+      text-shadow: 0 0 15px #38bdf880;
     }
 
     p {
       color: #e2e8f0;
+      font-size: 1.1rem;
     }
 
     .project-list {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
     }
 
     .project {
-      background: #1e293b;
-      border-radius: 12px;
-      padding: 1.5rem;
-      display: block;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border: 1px solid #334155;
+      background: rgba(30, 41, 59, 0.3);
+      border-radius: 16px;
+      padding: 2rem;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 24px rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
     }
 
     .project:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(56, 189, 248, 0.2);
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 12px 30px rgba(56, 189, 248, 0.3);
     }
 
     .project h3 {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.7rem;
       color: #38bdf8;
+      font-size: 1.6rem;
+      text-shadow: 0 0 10px #38bdf860;
     }
 
     .project p {
@@ -92,28 +103,50 @@
     .project a {
       display: inline-block;
       margin-top: 0.5rem;
-      color: #0ea5e9;
-      font-weight: 600;
+      color: #38bdf8;
+      background-color: rgba(56, 189, 248, 0.1);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
       text-decoration: none;
-      transition: color 0.2s ease;
+      font-weight: 600;
+      transition: all 0.3s ease;
     }
 
     .project a:hover {
-      color: #38bdf8;
+      background-color: #38bdf8;
+      color: #0f172a;
+      box-shadow: 0 0 15px #38bdf8;
     }
 
     footer {
       text-align: center;
       padding: 2rem 1rem;
-      font-size: 0.9rem;
+      font-size: 1rem;
+      color: #94a3b8;
+      border-top: 1px solid rgba(56, 189, 248, 0.2);
+      margin-top: 4rem;
+    }
+
+    footer p {
       color: #64748b;
-      border-top: 1px solid #334155;
     }
 
     @keyframes fadeIn {
       from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: scale(0.95);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
       }
 
       to {
@@ -127,65 +160,61 @@
 <body>
   <header>
     <h1>Kevin Perona</h1>
-    <p>Desarrollador Junior enfocado en Kotlin y Spring Boot</p>
+    <p>Desarrollador Web y Móvil | Kotlin · Spring Boot · React</p>
   </header>
 
   <main>
     <section>
       <h2>Sobre mí</h2>
       <p>
-        Soy un desarrollador junior graduado en DAW. Busco oportunidades para crecer profesionalmente en entornos de trabajo en equipo.
+        Soy un desarrollador web y móvil apasionado por crear aplicaciones modernas y funcionales. Graduado en DAW y con experiencia en proyectos reales usando tecnologías actuales.
       </p>
     </section>
 
     <section>
       <h2>Tecnologías</h2>
-      <p>Kotlin · Spring Boot · Java · Docker · Git · GitHub · HTML · CSS · JavaScript · React · MySQL · Android Studio · Angular · PHP  </p>
+      <p>Kotlin · Spring Boot · Java · Docker · Git · GitHub · HTML · CSS · JavaScript · React · MySQL · Android Studio · Angular · PHP</p>
     </section>
 
     <section>
       <h2>Proyectos Destacados</h2>
       <div class="project-list">
         <div class="project">
+          <h3>Recomendador Musical IA 🎵</h3>
+          <p>App web que analiza tu estado de ánimo con IA y recomienda música de Spotify. Creada con Python, Streamlit y Transformers.</p>
+          <a href="https://github.com/kevinperonamartinez/recomendador-musical-ia" target="_blank">Ver código</a>
+          <a href="https://recomendador-musical-ia-kevinpm.streamlit.app/" target="_blank">Probar app</a>
+        </div>
 
- <div class="project">
-  <h3>Recomendador Musical IA</h3>
-  <p>Aplicación web que analiza el estado de ánimo del usuario mediante IA y recomienda canciones de Spotify en base a ello. Desarrollada con Python, Streamlit y Hugging Face Transformers.</p>
-  <a href="https://github.com/kevinperonamartinez/recomendador-musical-ia" target="_blank">Ver código en GitHub</a><br>
-  <a href="https://recomendador-musical-ia-kevinpm.streamlit.app/" target="_blank">Probar aplicación en vivo</a>
- </div>
-
-          <div class="project">
+        <div class="project">
           <h3>TaskManager API</h3>
           <p>Backend con Spring Boot para gestionar tareas con CRUD y autenticación.</p>
-          <a href="https://github.com/kevinperonamartinez/taskmanager-api" target="_blank">Ver código en GitHub</a>
+          <a href="https://github.com/kevinperonamartinez/taskmanager-api" target="_blank">Ver código</a>
         </div>
 
         <div class="project">
           <h3>Gestor de Libros API</h3>
           <p>API REST en Spring Boot para registrar, buscar y eliminar libros.</p>
-          <a href="https://github.com/kevinperonamartinez/bookapi" target="_blank">Ver código en GitHub</a>
+          <a href="https://github.com/kevinperonamartinez/bookapi" target="_blank">Ver código</a>
         </div>
-<div class="project">
-  <h3>WeatherApp React</h3>
-  <p>Aplicación web en React que muestra el clima actual en cualquier ciudad usando la API de OpenWeather.</p>
-  <a href="https://github.com/kevinperonamartinez/weather-app" target="_blank">Ver código en GitHub</a><br>
-  <a href="https://weather-app-pink-xi.vercel.app/" target="_blank">Ver aplicación en vivo</a>
-</div>
 
         <div class="project">
-          <h3>Aplicación Android de Tareas y Hábitos</h3>
-          <p>App desarrollada en Kotlin con almacenamiento local y gestión de tareas diarias.</p>
+          <h3>WeatherApp React ☀️</h3>
+          <p>App en React que muestra el clima actual en cualquier ciudad usando la API de OpenWeather.</p>
+          <a href="https://github.com/kevinperonamartinez/weather-app" target="_blank">Ver código</a>
+          <a href="https://weather-app-pink-xi.vercel.app/" target="_blank">Probar app</a>
+        </div>
+
+        <div class="project">
+          <h3>App Android de Tareas y Hábitos 📱</h3>
+          <p>App en Kotlin con almacenamiento local y gestión de tareas diarias.</p>
+          <a href="https://github.com/kevinperonamartinez/appBorealis" target="_blank">Ver código</a>
           <a href="https://drive.google.com/file/d/1qoRKZgGGk7gwZHIJliqXiLbArQ6H_Bcl/view?usp=drive_link" target="_blank">Descargar APK</a>
-          <br>
-           <a href="https://github.com/kevinperonamartinez/appBorealis" target="_blank">Ver código en GitHub</a>
-           <br>
-          <a href="https://drive.google.com/file/d/1eqQKAIryUNeHNIQIG-uJOdPGejtENjux/view?usp=drive_link" target="_blank">Ver documentación (PDF)</a>
         </div>
 
         <div class="project">
-          <h3>Página Web de Cursos de Alemán</h3>
-          <p>Sitio web informativo hecho con HTML, CSS, JavaScript y PHP.</p>
+          <h3>Página Web Cursos de Alemán 🇩🇪</h3>
+          <p>Sitio web informativo creado con HTML, CSS, JavaScript y PHP.</p>
           <a href="https://kevinperona.com.es/kennen&lernen/kevin/index.html" target="_blank">Ver página</a>
         </div>
       </div>
